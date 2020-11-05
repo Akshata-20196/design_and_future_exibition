@@ -1,0 +1,104 @@
+body{
+    margin:0px;
+}
+header{
+    
+    height: 100px;
+    text-align: center;
+    background-color: crimson;
+    color: white;
+    vertical-align: middle;
+    padding: 10px;
+    width: auto;
+}
+button{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(229, 231, 231);
+}
+button:hover{
+    background-color: blanchedalmond;
+}
+#main{
+    background-color:white;
+    height: 2000px;
+    width: auto;
+    text-align: center;
+    padding: 30px;
+    background-image: url("wallpaper2you_372346.jpg");
+}
+
+footer{
+    background-color: black;
+    color: white;
+    height: 30px;
+    text-align: center;
+    vertical-align: middle;
+}
+#left{
+    float:left;
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+    margin-right: 20px;
+    text-align: left;
+}
+#right{
+    float:left;
+    width: 40%;
+    height: 100%;
+
+}
+.panel{
+    transition: max-height 0.5s ease-out;
+    overflow: hidden;
+    max-height: 0px;
+    text-align: left;
+    border: 1px solid white;
+    color: white;
+    border-radius: 10px;
+}
+.accordian
+{
+    height: 50px;
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+    background-color:white;
+    border-radius: 10px;
+    vertical-align: middle;
+    padding-top: 5px;
+    transition: 0.4s;
+   border: 1px solid darkgray;    
+   font-size: 20px;
+   font-family: 'Times New Roman', Times, serif;
+   border-collapse: collapse;
+}
+.accordian:hover{
+    cursor: pointer;
+    background-color: crimson;
+    color: white;
+}
+.accordian.active
+{
+    background-color: crimson;
+    color: white;
+}
+h2{
+    color: white;
+    text-align: left;
+}
+p{
+    text-align: left;
+}
+img{
+    width: 300px;
+    
+}
+#footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}

@@ -1,0 +1,335 @@
+<html>
+    <head>
+        <style>
+            body{
+                margin:0px;
+            }
+            header{
+                
+                height: 100px;
+                text-align: center;
+                background-color: crimson;
+                color: white;
+                vertical-align: middle;
+                padding: 10px;
+                width: auto;
+            }
+            button{
+                border-radius: 50%;
+                width: 300px;
+                height: 300px;
+                background-color: rgb(229, 231, 231);
+            }
+            button:hover{
+                background-color: blanchedalmond;
+            }
+            #main{
+                background-color:white;
+                height: 100%;
+                width: auto;
+                text-align: center;
+                padding: 30px;
+                background-image: url("wallpaper2you_372346.jpg");
+            }
+            #left{
+                float:left;
+                width:50%;
+                height: 100%;
+                color: white;
+                text-align: left;
+            }
+            #chart-container{
+                float:left;
+                width: 40%;
+                height: 100%;
+
+            }
+            table{
+                border: 0px solid grey;
+                text-align: center;
+                
+            }
+            table.center{
+                margin-left: auto; 
+                margin-right: auto;
+            }
+            td{
+                text-align: center;
+                border: 0px solid grey;
+                padding: 50px;
+            }
+            footer{
+                background-color: black;
+                color: white;
+                height: 30px;
+                text-align: center;
+                vertical-align: middle;
+                float:inline-end;
+            }
+        </style>
+ <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+ <script type="text/javascript">
+   google.charts.load("current", {packages:["corechart"]});
+   google.charts.setOnLoadCallback(drawChart);
+   function drawChart() {
+     var data = google.visualization.arrayToDataTable([
+       ['Task', 'Hours per Day'],
+       ['category 1',     11],
+       ['category 2',      11],
+       ['category 3',  2],
+       ['category 4', 2],
+       ['category 5',    7]
+     ]);
+
+     var options = {
+       title: 'My Daily Activities',
+       pieHole: 1,
+     };
+
+     var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+     chart.draw(data, options);
+   }
+ </script>
+ <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+ <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+ <script type="text/javascript">
+     FusionCharts.ready(function(){
+         var chartObj = new FusionCharts({
+ type: 'multilevelpie',
+ renderAt: 'chart-container',
+ width: '700',
+ height: '700',
+ dataFormat: 'json',
+ dataSource: {
+     "chart": {
+         "caption": "Design and Future Journey",
+         "subcaption": "5 Weeks",
+         "showPlotBorder": "1",
+         "piefillalpha": "100",
+         "pieborderthickness": "1",
+         "hoverfillcolor": "#CCCCCC",
+         "piebordercolor": "#FFFFFF",
+         "hoverfillcolor": "#CCCCCC",
+         "numberprefix": "$",
+         "plottooltext": "$label, $$valueK, $percentValue",
+         //Theme
+         "theme": "fusion"
+     },
+     "category":[{
+         "label": "Design and Future",
+         "color": "#41f226",
+        "value" : "500",
+     "category": [{
+         "label": "Group 1",
+         "color":"#8daafc",
+         "value": "150",
+         "category": [{
+             "label": "keywords",
+             "color": "#f8bd19",
+             "value": "35",
+             "tooltext": "hsdhakekd hgjwgd sbdhs sbhdhw sdhdjwgheg nsbdhwghe nbbdgweged nbdwgebd bwhdhw",
+             "category": [{
+                 "label": "student 1",
+                 "color": "#f8bd19",
+                 "value": "9.99",
+                 "tooltext":"<h1>Student 1</h1>",
+                 "link":"D:/SMI/Website/student_akshata.html"
+             }, {
+                 "label": "student 2",
+                 "color": "#f8bd19",
+                 "value": "9.99",
+                 "link":"D:/SMI/Website/student_akshata.html",
+                 "tooltext" : "<h1>Hello</h1>"
+                 
+             }, {
+                 "label": "student 3",
+                 "color": "#f8bd19",
+                 "value": "9.99",
+                 "link":"D:/SMI/Website/student_akshata.html"
+             }, {
+                 "label": "student 4",
+                 "color": "#f8bd19",
+                 "value": "9.99",
+                 "link":"D:/SMI/Website/student_akshata.html"
+             }]
+         }]},{
+         "label": "Group 2",
+         "color":"#8daafc",
+         "value": "150",
+         "category":[{
+             "label": "keywords",
+             "color": "#33ccff",
+             "value": "35",
+             "tooltext": "Apparel & Accessories, $$valueK, $percentValue",
+             "category": [{
+                 "label": "student 5",
+                 "color": "#33ccff",
+                 "value": "9.99",
+                 "link":"D:/SMI/Website/student_akshata.html"
+             }, {
+                 "label": "student 6",
+                 "color": "#33ccff",
+                 "value": "9.99",
+                 "link":"D:/SMI/Website/student_akshata.html"
+             }, {
+                 "label": "student 7",
+                 "color": "#33ccff",
+                 "value": "9.99",
+                 "link":"D:/SMI/Website/student_akshata.html"
+             }, {
+                 "label": "student 8",
+                 "color": "#33ccff",
+                 "value": "9.99",
+                 "link":"D:/SMI/Website/student_akshata.html"
+             }]
+         }
+         ]},{
+         "label": "Group 3",
+         "color":"#8daafc",
+         "value": "150",
+         "category":[{
+             "label": "keywords",
+             "color": "#ffcccc",
+             "value": "35",
+             "tooltext": "Baby Products, $$valueK, $percentValue",
+             "category": [{
+                 "label": "student 9",
+                 "color": "#ffcccc",
+                 "value": "9.99",
+                 "tooltext": "Bath & Grooming, $$valueK, $percentValue",
+                 "link":"D:/SMI/Website/student_akshata.html"
+
+             }, {
+                 "label": "student 10",
+                 "color": "#ffcccc",
+                 "value": "9.99",
+                 "link":"D:/SMI/Website/student_akshata.html"
+             }, {
+                 "label": "student 11",
+                 "color": "#ffcccc",
+                 "value": "9.99",
+                 "link":"D:/SMI/Website/student_akshata.html"
+             },
+             {
+                 "label": "student 12",
+                 "color": "#eff298",
+                 "value": "9.99",
+                 "link":"D:/SMI/Website/student_akshata.html"
+             },
+             {
+                 "label": "student 13",
+                 "color": "#eff298",
+                 "value": "9.99",
+                 "link":"D:/SMI/Website/student_akshata.html"
+             }]
+         }]
+         },{
+         "label": "Group 4",
+         "color":"#8daafc",
+         "value": "150",
+         "category":[{
+             "label": "keywords",
+             "color": "#ccff66",
+             "value": "35",
+             "category": [{
+                 "label": "Akshata",
+                 "color": "#ccff66",
+                 "value": "9.99",
+                 "tooltext":"Human psychology,Tech life, Technology, Addiction, Social Media, Digital Natives,conception, Digital Wellbeing,Social Media,Addiction,Human Health, Depression",
+                 "link":"D:/SMI/Website/student_akshata.html"
+             }, {
+                 "label": "Namita",
+                 "color": "#ccff66",
+                 "value": "9.99",
+                 "link":"D:/SMI/Website/student_akshata.html"
+             },{
+                 "label": "Shivam",
+                 "color": "#ccff66",
+                 "value": "9.99",
+                 "link":"D:/SMI/Website/student_akshata.html"
+             },
+             {
+                 "label": "Saumya",
+                 "color": "#ccff66",
+                 "value": "9.99",
+                 "link":"D:/SMI/Website/student_akshata.html"
+             },{
+                 "label": "Aashish",
+                 "color": "#ccff66",
+                 "value": "9.99",
+                 "link":"D:/SMI/Website/student_akshata.html"
+             }
+             ]
+         }]
+     },
+        {
+        "label": "Group 5",
+            "color":"#8daafc",
+            "value": "150",
+                "category":
+                [
+                {
+                    "label": "keywords",
+                    "color": "#eff298",
+                    "value": "35",
+                    "category":
+                [
+                    {
+                        "label": "student 19",
+                        "color": "#eff298",
+                        "value": "9.99",
+                        "link":"D:/SMI/Website/student_akshata.html"
+                    }, {
+                        "label": "student 20",
+                        "color": "#eff298",
+                        "value": "9.99",
+                        "link":"D:/SMI/Website/student_akshata.html"
+                    },
+                    {
+                        "label": "student 21",
+                        "color": "#eff298",
+                        "value": "9.99",
+                        "link":"D:/SMI/Website/student_akshata.html"
+                    },
+                    {
+                        "label": "student 22",
+                        "color": "#eff298",
+                        "value": "9.99",
+                        "link":"D:/SMI/Website/student_akshata.html"
+                    },
+                    {
+                        "label": "student 23",
+                        "color": "#eff298",
+                        "value": "9.99",
+                        "link":"D:/SMI/Website/student_akshata.html"
+                    }
+                ]
+                }
+                ]
+        }  
+    ]
+    }]
+    }
+ });
+         chartObj.render();
+     });
+ </script>
+    </head>
+    <body>
+        <header>
+            <h1>Design and Future</h1>
+        </header>
+        <div id='main'>
+        <div id='left'>
+                <h1>Brief About Studio</h1>
+                <p>
+                    
+                </p>
+        </div>
+            <div id="chart-container">FusionCharts XT will load here!</div>
+        </div>
+        <footer>
+            Design and Future Studio
+        </footer>
+    </body>
+</html>
